@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "../App.css";
+
 import {
   checkConnection,
   retrievePublicKey,
@@ -33,17 +35,21 @@ const Header = ({ pubKey, setPubKey }) => {
   };
 
   return (
-    <div className="bg-gray-300 h-20 flex justify-between items-center px-4 sm:px-10">
-      <div className="text-xl sm:text-3xl font-bold">On Chain Habit Tracker</div>
+    <div className="header">
+      {/* LEFT: TITLE */}
+      <div className="header-title">
+        On Chain Habit Tracker
+      </div>
 
-      <div className="flex items-center gap-2 sm:gap-4">
+      {/* RIGHT: WALLET INFO + BUTTON */}
+      <div className="header-right">
         {pubKey && (
           <>
-            <div className="p-2 bg-gray-50 border rounded-md text-sm">
+            <div className="header-box">
               {`${pubKey.slice(0, 4)}...${pubKey.slice(-4)}`}
             </div>
 
-            <div className="p-2 bg-gray-50 border rounded-md text-sm">
+            <div className="header-box">
               Balance: {balance} XLM
             </div>
           </>
@@ -52,11 +58,11 @@ const Header = ({ pubKey, setPubKey }) => {
         <button
           onClick={connectWallet}
           disabled={connected}
-          className={`text-sm sm:text-xl w-36 sm:w-52 rounded-md p-2 sm:p-4 font-bold text-white ${
-            connected
-              ? "bg-green-500 cursor-not-allowed"
-              : "bg-blue-400 hover:bg-blue-500"
-          }`}
+          className="header-btn"
+          style={{
+            opacity: connected ? 0.7 : 1,
+            cursor: connected ? "not-allowed" : "pointer"
+          }}
         >
           {connected ? "Connected" : "Connect Wallet"}
         </button>
