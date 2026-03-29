@@ -192,3 +192,9 @@ soroban contract invoke --id <CONTRACT_ID> --network testnet \
 ## Contract Details:
 Contract ID: CANTK2B3XVOOUEU4YRWYFMOHSQGAAINHDVCAQEM7RPQD4HMZCL2MZQ4A
 <img width="1912" height="868" alt="image" src="https://github.com/user-attachments/assets/ba371efb-6f6a-4239-a0b2-0062224e35bd" />
+
+
+##Website Details:
+Website Name: On-Chain-Habbit-Tracker
+<img width="1909" height="869" alt="image" src="https://github.com/user-attachments/assets/11e0dc83-5321-4a84-b803-c24bd0212c78" />
+
