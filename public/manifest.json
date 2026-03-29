@@ -1,0 +1,9 @@
+{
+  "short_name": "HabitTracker",
+  "name": "On Chain Habit Tracker dApp",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
